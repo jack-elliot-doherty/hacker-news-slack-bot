@@ -2,8 +2,6 @@ import Head from "next/head";
 import GithubCorner from "@/components/github-corner";
 import SlackButton from "@/components/slack-button";
 import Image from "next/image";
-import LiteYouTubeEmbed from "react-lite-youtube-embed";
-import "react-lite-youtube-embed/dist/LiteYouTubeEmbed.css";
 import Link from "next/link";
 
 export default function Home() {
@@ -12,7 +10,6 @@ export default function Home() {
       <Head>
         <title>Hacker News Slack Bot</title>
       </Head>
-      <GithubCorner url="https://github.com/vercel-labs/hacker-news-slack-bot" />
 
       <main className="flex flex-col space-y-5 items-center justify-center min-h-screen max-h-screen py-10 sm:pb-20">
         <div className="relative w-[422px] h-[66px] sm:w-[633px] sm:h-[100px]">
@@ -35,17 +32,7 @@ export default function Home() {
         <div
           className="relative w-full max-w-2xl border border-gray-200 drop-shadow-md 
          sm:rounded-lg overflow-hidden"
-        >
-          <LiteYouTubeEmbed
-            id="gBCIaf200oQ"
-            adNetwork={true}
-            playlist={false}
-            title="Hacker News Slack Bot Demo"
-            noCookie={true}
-            thumbnail="/screenshot.png"
-            aspectHeight={10}
-          />
-        </div>
+        ></div>
         <div className="flex flex-col text-center space-y-2">
           <SlackButton
             text="Add to Slack"
